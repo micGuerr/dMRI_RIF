@@ -1,0 +1,44 @@
+%%
+%% This is a configuration file
+%% 
+% You should follow these operations:
+%  
+% 1. copy this file and save it as "dmriRif_config.m".
+% 
+% 2. where indicated, modify the code.
+% 
+% 3. Run the scrpt.
+
+%% Set the paths
+
+% add the full path to the dMRI_RIF directory;
+dmririf_path = 'C:\Users\ucacmgu\OneDrive - University College London\dMRI_RIF'; 
+
+% add the full path to the constrained spherical decovolution toolbox. 
+% You can find it here: https://github.com/jdtournier/csd
+csd_path = 'C:\Users\ucacmgu\OneDrive - University College London\MATLAB\csd-master\'; 
+
+% you need to add this only in case you want to compute Gaunt matrices
+% you should add the full path to the matlab toolbox you can find here:
+% https://ww2.mathworks.cn/matlabcentral/fileexchange/43856-real-complex-spherical-harmonic-transform-gaunt-coefficients-and-rotations?s_tid=prof_contriblnk
+aaltosh_path = 'C:\Users\ucacmgu\OneDrive - University College London\MATLAB\Spherical-Harmonic-Transform-master\'; 
+
+%% Add paths to MATLAB paths
+
+addpath(genpath(fullfile(dmririf_path, 'matlab')));
+addpath(genpath(csd_path));
+addpath(genpath(aaltosh_path));
+
+
+%% Define the path to Gaunt matrices and algeraically idependent info
+
+global G3 G4 G5 ALG_INDEP
+
+lib_path = fullfile(dmririf_path, 'lib');
+
+G3 = fullfile(lib_path, 'Gd3.mat');
+G4 = fullfile(lib_path, 'Gd4.mat');
+G5 = fullfile(lib_path, 'Gd5.mat');
+ALG_INDEP = fullfile(lib_path, 'algIndp.mat');
+
+%% End of configuration
