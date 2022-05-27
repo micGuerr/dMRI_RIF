@@ -24,8 +24,10 @@ function rif = getRIF_signalRepresentation_fullVec(signal, protocol, lmax, d)
 %
 %
 
+global ALG_INDEP
+
 % load the indices for alebrical independence
-load('C:\Users\ucacmgu\OneDrive - University College London\NODDIplus-DNN\Utilities\algIndp.mat', 'algIndpRif')
+load(ALG_INDEP, 'algIndpRif')
 
 % compute the SH coefficients
 SHcoeff = signal2SH_multishell(signal, protocol, lmax);
