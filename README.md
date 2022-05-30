@@ -17,21 +17,21 @@ In this repository we present a MATLAB implementation of Zucchelli et al. framew
 
 ## Prerequisite
 
-Theframework has been develped an tested on MATLAB 2021a. The following packages and toolboxes are needed:
+The framework has been developed and tested on MATLAB 2021a. The following packages and toolboxes are needed:
 
-* Te MATLAB [constrained spherical deconvolution](https://github.com/jdtournier/csd) toolbox.
+* The MATLAB [constrained spherical deconvolution](https://github.com/jdtournier/csd) toolbox.
 
-If you want to compute the Gaunt matices on your own, you'll need to have the:
+If you want to compute the Gaunt matrices on your own, you'll need to have the:
 
 * [Real/Complex Spherical Harmonic Transform, Gaunt Coefficients and Rotations](https://uk.mathworks.com/matlabcentral/fileexchange/43856-real-complex-spherical-harmonic-transform-gaunt-coefficients-and-rotations?s_tid=prof_contriblnk) from Aalto university.
 
-If you wanto to compute the set of algebraically independent RIF on your own you'll need to have the:
+If you want to compute the set of algebraically independent RIF on your own you'll need to have the:
 
 * [MATLAB symbolic computation toolbox](https://uk.mathworks.com/help/symbolic/symbolic-computations-in-matlab.html).
 
 ## Download
 
-You can dowload a zip version of the repository or use the following command from terminal:
+You can download a zip version of the repository or use the following command from terminal:
 
 ```
 git clone https://github.com/micGuerr/dMRI_RIF.git
